@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input Output Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Basic Input Output</h1>
+            <p class="hero-description">Practice Questions on basics for improving the fundamentals of c language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Write a program to print the message:
+                    Today I made my first C Program.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        clrscr();
+        printf("Today I made my first C Program.");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>Today I made my first C Program.</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Write a program to read a character from the keyboard and display it on the
+                    screen.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+
+    void main()
+    {
+        char ch;
+
+        clrscr();
+
+        printf("Enter a character: ");
+        scanf("%c", &ch);
+
+        printf("You entered: %c", ch);
+
+        delay(3000);
+    }
+                </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a character: A
+You entered: A</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Write a program to read only 4 characters from the keyboard and display it on
+                    the screen in a separate line.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char a, b, c, d;
+
+        clrscr();
+
+        printf("Enter 4 characters: ");
+        scanf("%c%c%c%c", &a, &b, &c, &d);
+
+        printf("\n%c\n%c\n%c\n%c", a, b, c, d);
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 4 characters: ABCD
+A
+B
+C
+D</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 4</u> : Write a program to print your name at center of the first line?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        clrscr();
+
+        printf("\t\t\t\tGaurav")
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>               Gaurav</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 5</u> : Write a program to store single quote and print that variable to show single
+                    quote on output screen.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char ch;
+        clrscr()
+        ch = '\'';
+
+        printf("%c", ch);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>'</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 6</u> : Write a program for printing your name on output screen but your name should
+                    blink 5 times
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int i;
+        clrscr()
+        for(i = 1; i &lt;= 5; i++)
+        {
+        printf("Gaurav");
+        delay(500);
+
+        clrscr();
+        delay(500);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>Gaurav will blink 5 times.</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <pre>
+<u>Question 7</u> : Write the program to display this output ?
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main ()
+{
+clrscr();
+printf(“hello,welcome to c”);
+delay(5000);
+}
+                </pre>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        clrscr()
+        printf("#include &lt;stdio.h&gt;\n");
+        printf("#include &lt;conio.h&gt;\n");
+        printf("#include &lt;dos.h&gt;\n");
+        printf("void main()\n");
+        printf("{\n");
+        printf("    clrscr();\n");
+        printf("    printf(\"hello,welcome to c\");\n");
+        printf("    delay(5000);\n");
+        printf("}");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main ()
+{
+clrscr();
+printf(“hello,welcome to c”);
+delay(5000);
+}               </pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 8</u> : Write a program to print your name at center of the page.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        clrscr()
+        printf("\n\n\n\n\n\n\n\n\t\t\tGaurav");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>Gaurav will appear approximately in the center of the screen.</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 9</u> : Enter a password and display it as ******?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char a;
+        clrscr();
+        printf("Enter password: ");
+        a = getch();
+        printf("*");
+        a = getch();
+        printf("*");
+        a = getch();
+        printf("*");
+        a = getch();
+        printf("*");
+        a = getch();
+        printf("*");
+        a = getch();
+        printf("*");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>Enter password : ******</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 10</u> : Enter two characters from user and print ASCII value.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char a, b;
+
+        clrscr();
+
+        printf("Enter first character: ");
+        scanf("%c", &a);
+
+        printf("Enter second character: ");
+        scanf(" %c", &b);
+
+        printf("ASCII value of %c = %d\n", a, a);
+        printf("ASCII value of %c = %d", b, b);
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter first character: A
+Enter second character: B
+ASCII value of A = 65
+ASCII value of B = 66</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 11</u> : Print all ASCII characters from 0 to 127.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int i;
+
+        clrscr();
+
+        for(i = 0; i &lt;= 127; i++)
+        {
+            printf("%d = %c\n", i, i);
+        }
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>0 = NUL
+1 = SOH
+2 = STX
+3 = ETX
+4 = EOT
+5 = ENQ
+6 = ACK
+7 = BEL
+8 = BS
+9 = HT
+10 = LF
+11 = VT
+12 = FF
+13 = CR
+14 = SO
+15 = SI
+16 = DLE
+17 = DC1
+18 = DC2
+19 = DC3
+20 = DC4
+21 = NAK
+22 = SYN
+23 = ETB
+24 = CAN
+25 = EM
+26 = SUB
+27 = ESC
+28 = FS
+29 = GS
+30 = RS
+31 = US
+32 = SPACE
+33 = !
+34 = "
+35 = #
+36 = $
+37 = %
+38 = &
+39 = '
+40 = (
+41 = )
+42 = *
+43 = +
+44 = ,
+45 = -
+46 = .
+47 = /
+48 = 0
+49 = 1
+50 = 2
+51 = 3
+52 = 4
+53 = 5
+54 = 6
+55 = 7
+56 = 8
+57 = 9
+58 = :
+59 = ;
+60 = <
+61 = =
+62 = >
+63 = ?
+64 = @
+65 = A
+66 = B
+67 = C
+68 = D
+69 = E
+70 = F
+71 = G
+72 = H
+73 = I
+74 = J
+75 = K
+76 = L
+77 = M
+78 = N
+79 = O
+80 = P
+81 = Q
+82 = R
+83 = S
+84 = T
+85 = U
+86 = V
+87 = W
+88 = X
+89 = Y
+90 = Z
+91 = [
+92 = \
+93 = ]
+94 = ^
+95 = _
+96 = `
+97 = a
+98 = b
+99 = c
+100 = d
+101 = e
+102 = f
+103 = g
+104 = h
+105 = i
+106 = j
+107 = k
+108 = l
+109 = m
+110 = n
+111 = o
+112 = p
+113 = q
+114 = r
+115 = s
+116 = t
+117 = u
+118 = v
+119 = w
+120 = x
+121 = y
+122 = z
+123 = {
+124 = |
+125 = }
+126 = ~
+127 = DEL</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+
+</html>

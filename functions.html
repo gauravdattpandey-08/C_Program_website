@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Functions</h1>
+            <p class="hero-description">Practice Questions on functions for improving this concept in
+                C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Swap numbers using Call by address ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void swap(int *a, int *b)
+    {
+        int temp;
+
+        temp = *a;
+        *a = *b;
+        *b = temp;
+    }
+
+    void main()
+    {
+        int a, b;
+
+        clrscr();
+
+        printf("Enter two numbers: ");
+        scanf("%d%d", &a, &b);
+
+        printf("Before swapping: a = %d, b = %d\n", a, b);
+
+        swap(&a, &b);
+
+        printf("After swapping: a = %d, b = %d", a, b);
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter two numbers: 10 20
+Before swapping: a = 10, b = 20
+After swapping: a = 20, b = 10</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Swap numbers using Call by function ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    int a, b;
+
+    void swap()
+    {
+        int temp;
+
+        temp = a;
+        a = b;
+        b = temp;
+    }
+
+    void main()
+    {
+        clrscr();
+
+        printf("Enter two numbers: ");
+        scanf("%d%d", &a, &b);
+
+        printf("Before swapping: a = %d, b = %d\n", a, b);
+
+        swap();
+
+        printf("After swapping: a = %d, b = %d", a, b);
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter two numbers: 5 9
+Before swapping: a = 5, b = 9
+After swapping: a = 9, b = 5</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Make function for find out Cube a user entered number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    int cube(int n)
+    {
+        return n * n * n;
+    }
+
+    void main()
+    {
+        int n, ans;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        ans = cube(n);
+
+        printf("Cube = %d", ans);
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 4
+Cube = 64</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+</html>

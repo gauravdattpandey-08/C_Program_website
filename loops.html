@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Loops</h1>
+            <p class="hero-description">Practice Questions on loops for improving this concept in
+                C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Enter a number from the user and check it is a prime number or not ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n, i, count=0;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        for(i=1; i&lt;=n; i++)
+        {
+            if(n % i == 0)
+            {
+                count++;
+            }
+        }
+
+        if(n > 1 && count == 2)
+            printf("Prime number");
+        else
+            printf("Not a prime number");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 7
+Prime number</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Write a program to print your name 1 lakh times ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int i;
+
+        clrscr();
+
+        for(i=1; i&lt;=100000; i++)
+        {
+            printf("Gaurav\n");
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Gaurav is printed 100,000 times.</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Write a program to print a series 1 to 1 lakh ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int i;
+
+        clrscr();
+
+        for(i=1; i&lt;=100000; i++)
+        {
+            printf("%d ", i);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>1 2 3 4 5 6 7 8 9 10 11 12 ... so on upto 100000</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 4</u> : Enter a number from the user and print the series from 1 to that number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n, i;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        for(i=1; i&lt;=n; i++)
+        {
+            printf("%d ", i);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 10
+1 2 3 4 5 6 7 8 9 10</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 5</u> : Enter a number from the user and print that number 100 times ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n, i;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        for(i=1; i&lt;=100; i++)
+        {
+            printf("%d\n", n);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 11
+11
+11
+11
+11
+... so on upto 100 times</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+</html>

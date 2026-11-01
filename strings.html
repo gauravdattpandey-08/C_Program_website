@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Strings</h1>
+            <p class="hero-description">Practice Questions on strings for improving this concept in
+                C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Enter a string from user and concatenate the string ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char str1[20], str2[20];
+
+        clrscr();
+
+        printf("Enter first string: ");
+        scanf(" %s", str1);
+
+        printf("Enter second string: ");
+        scanf(" %s", str2);
+
+        strcat(str1, str2);
+
+        printf("Combined string: %s", str1);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Gaurav and Pandey -> Gaurav Pandey</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Enter a string from user and compare those string ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char str1[20], str2[20];
+
+        clrscr();
+
+        printf("Enter first string: ");
+        scanf("%s", str1);
+
+        printf("Enter second string: ");
+        scanf("%s", str2);
+
+        if(strcmp(str1, str2) == 0)
+            printf("Strings are equal");
+        else
+            printf("Strings are not equal");
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Gaurav and Gaurav → Strings are equal</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Enter a string from user and copy that string into another string ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char str1[20], str2[20];
+
+        clrscr();
+
+        printf("Enter a string: ");
+        scanf("%s", str1);
+
+        strcpy(str2, str1);
+
+        printf("Original string: %s\n", str1);
+        printf("Copied string: %s", str2);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Hence, the string will be copied.</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+</html>

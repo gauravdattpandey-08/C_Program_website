@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Dimensional Array Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">One dimensional array</h1>
+            <p class="hero-description">Practice Questions on 1-D array for improving this concept in
+                C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Enter an array from user and display all the value ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a[10], i;
+
+        clrscr();
+
+        printf("Enter 10 values:\n");
+
+        for(i=0; i<10; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        printf("Array elements are:\n");
+
+        for(i=0; i&lt;10; i++)
+        {
+            printf("%d ", a[i]);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 10 values:
+1 2 3 4 5 6 7 8 9 10
+Array elements are:
+1 2 3 4 5 6 7 8 9 10</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Enter an array from user and print the array in reverse order ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a[10], i;
+
+        clrscr();
+
+        printf("Enter 10 values:\n");
+
+        for(i=0; i<10; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        printf("Reverse array:\n");
+
+        for(i=9; i>=0; i--)
+        {
+            printf("%d ", a[i]);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 10 values:
+1 2 3 4 5 6 7 8 9 10
+Reverse array:
+10 9 8 7 6 5 4 3 2 1</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Enter an array from user and copy the array into second array ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a[10], b[10], i;
+
+        clrscr();
+
+        printf("Enter 10 values:\n");
+
+        for(i=0; i<10; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        for(i=0; i<10; i++)
+        {
+            b[i] = a[i];
+        }
+
+        printf("Second array:\n");
+
+        for(i=0; i<10; i++)
+        {
+            printf("%d ", b[i]);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 10 values:
+1 2 3 4 5 6 7 8 9 10
+Second array:
+1 2 3 4 5 6 7 8 9 10</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 4</u> : Enter an array from user and copy it into another array in reverse order ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+         int a[10], b[10], i;
+
+        clrscr();
+
+        printf("Enter 10 values:\n");
+
+        for(i=0; i<10; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        for(i=0; i<10; i++)
+        {
+            b[i] = a[9-i];
+        }
+
+        printf("Second array in reverse order:\n");
+
+        for(i=0; i<10; i++)
+        {
+            printf("%d ", b[i]);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 10 values:
+1 2 3 4 5 6 7 8 9 10
+Second array in reverse order:
+10 9 8 7 6 5 4 3 2 1</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 5</u> : Enter an array from user and square all the values of array ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+         int a[10], i;
+
+        clrscr();
+
+        printf("Enter 10 values:\n");
+
+        for(i=0; i<10; i++)
+        {
+            scanf("%d", &a[i]);
+        }
+
+        printf("Squares are:\n");
+
+        for(i=0; i&lt;10; i++)
+        {
+            printf("%d ", a[i] * a[i]);
+        }
+
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter 10 values:
+1 2 3 4 5 6 7 8 9 10
+Squares are:
+1 4 9 16 25 36 49 64 81 100</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structures Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Structures</h1>
+            <p class="hero-description">Practice Questions on structures for improving this concept in 
+                C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Create structure of employee which there is emp.ID, name, designation of 50 employees from user, print details in tabular form ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+
+    struct employee
+    {
+        int id;
+         char name[30];
+        char designation[30];
+    };
+
+    void main()
+    {
+        struct employee e[50];
+        int i;
+    
+        clrscr();
+
+        for(i = 0; i &lt; 50; i++)
+            {
+                printf("Enter employee ID: ");
+                scanf("%d", &e[i].id);
+
+                printf("Enter name: ");
+                scanf("%s", e[i].name);
+
+                printf("Enter designation: ");
+                scanf("%s", e[i].designation);
+            }
+
+        printf("\nID\tName\tDesignation\n");
+
+        for(i = 0; i &lt; 50; i++)
+            {
+                printf("%d\t%s\t%s\n",
+                e[i].id, e[i].name, e[i].designation);
+            }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter employee ID: 101
+Enter name: Gaurav
+Enter designation: Manager
+
+Enter employee ID: 102
+Enter name: Aman
+Enter designation: Clerk...
+
+ID      Name    Designation
+101     Rahul   Manager
+102     Aman    Clerk ...</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Create structure of employee which there is emp.ID, name, designation of 50 employees from user and print only name of the employee ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+
+    struct employee
+    {
+        int id;
+        char name[30];
+        char designation[30];
+    };
+
+    void main()
+    {
+    struct employee e[50];
+    int i;
+
+    clrscr();
+
+    for(i = 0; i &lt; 50; i++)
+        {
+            printf("Enter employee ID: ");
+            scanf("%d", &e[i].id);
+
+            printf("Enter name: ");
+            scanf("%s", e[i].name);
+
+            printf("Enter designation: ");
+            scanf("%s", e[i].designation);
+        }
+
+    printf("\nEmployee Names\n");
+
+    for(i = 0; i < 50; i++)
+        {
+            printf("%s\n", e[i].name);
+        }
+
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Employee Names
+Gaurav
+Sumit
+Aaryan
+...</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    min-height: 70px;
+    width: 100%;
+    background-color: #0F172A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.logo a:hover {
+    text-shadow: 3px 3px 5px rgb(121, 233, 248);
+    transition: 0.58s;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.links a:hover {
+    text-shadow: 3px 3px 5px rgb(121, 233, 248);
+    transition: 0.58s;
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: #F8FAFC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-para {
+    width: 50%;
+    height: 100vh;
+}
+
+.hero-heading {
+    color: #0f172a;
+    margin: 20px auto;
+    margin-top: 100px;
+    width: 75%;
+    font-size: 60px;
+    text-shadow: 5px 5px lightblue;
+}
+
+.hero-description {
+    margin: 60px auto;
+    margin-top: 30px;
+    font-size: 30px;
+    width: 75%;
+    font-style: italic;
+}
+
+.image a img {
+    min-height: 400px;
+    width: 500px;
+    margin-top: 60px;
+    margin-right: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.image a img:hover {
+    transform: scale(1.09);
+    transition: 1.02s;
+}
+
+.btn {
+    margin-left: 12%;
+    justify-content: center;
+    color: white;
+    text-decoration-line: none;
+    background-color: #32abe7;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.btn:hover {
+    background-color: #10117d;
+    text-shadow: 5px 5px 5px lightblue;
+    transition: 0.28s;
+}
+
+.topics-page {
+    min-height: 220vh;
+    background-color: #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic-intro {
+    margin: 50px;
+    text-align: center;
+    color: white;
+}
+
+.topic-heading {
+    font-size: 50px;
+    color: #0f172a;
+    text-transform: uppercase;
+    text-shadow: 5px 5px lightblue;
+}
+
+.topic-description {
+    text-align: center;
+    color: #0f172a;
+    width: 75%;
+    margin: 40px 160px;
+    font-size: 25px;
+    font-style: italic;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topic-card {
+    min-height: 250px;
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: rgb(209, 226, 245);
+    box-shadow: 15px 15px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-heading {
+    color: #0F172A;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    text-shadow: 3px 3px lightslategray;
+}
+
+.card-about {
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-btn {
+    border: 1px solid rgb;
+    border-radius: 15px;
+    background-color: #32abe7;
+    text-decoration: none;
+    color: rgb(238, 239, 234);
+    padding: 15px;
+    margin: 5px 65px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.card-btn:hover {
+    background-color: #10117d;
+    text-shadow: 5px 5px 5px lightblue;
+    transition: 0.28s;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    background-color: cornflowerblue;
+    box-shadow: 20px 20px 20px rgb(14, 30, 152);
+    transition: 0.78s;
+    color: white;
+    text-shadow: 2px 2px 5px white;
+}
+
+.footer {
+    min-height: 10vh;
+    background-color: #0F172A;
+}
+
+.copyright {
+    height: 100%;
+    background-color: #0F172A;
+    padding-top: 20px;
+    color: #F8FAFC;
+    text-align: center;
+    font-size: 24px;
+}

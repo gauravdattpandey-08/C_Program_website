@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Control Structure Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Decision Control Structures</h1>
+            <p class="hero-description">Practice Questions on Decision making for improving this concept in C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Write a program to enter the number from the user and check it is positive or negative or 0 (zero) ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n > 0)
+            printf("Positive number");
+        else if(n < 0)
+            printf("Negative number");
+        else
+            printf("Zero");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: -5
+Negative number</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Enter a number from user and check it is odd or even ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n % 2 == 0)
+            printf("Even number");
+        else
+            printf("Odd number");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 8
+Even number</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Enter a number from the user and check that it is of 1 digit or 2 digit or 3 digit or 4 digit or 5 digit ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n &lt; 0)
+            n = -n;
+
+        if(n &lt;= 9)
+            printf("1 digit number");
+        else if(n &lt;= 99)
+            printf("2 digit number");
+        else if(n &lt;= 999)
+            printf("3 digit number");
+        else if(n &lt;= 9999)
+            printf("4 digit number");
+        else if(n &lt;= 99999)
+            printf("5 digit number");
+        else
+            printf("More than 5 digits");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 456
+3 digit number</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 4</u> : Enter a number from the user if the number is between 0 to 40 then we will print fail if the number is between 40 to 60 then we will print C grade ,if the number is between 60 to 80 than we will print B grade ,if the number is between 80 to 100 then we will print A grade and rest all number are invalid ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int marks;
+
+        clrscr();
+
+        printf("Enter marks: ");
+        scanf("%d", &marks);
+
+        if(marks  0 || marks > 100)
+            printf("Invalid marks");
+        else if(marks = 40)
+            printf("Fail");
+        else if(marks = 60) 
+            printf("C grade");
+        else if(marks = 80)
+            printf("B grade");
+        else
+            printf("A grade");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter marks: 75
+B grade</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 5</u> : Enter a number from the user and check it is a decimal number or not ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        float n;
+        int a;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%f", &n);
+
+        a = n;
+
+        if(n == a)
+            printf("Not a decimal number");
+        else
+            printf("Decimal number");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 12.5
+Decimal number</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 6</u> : Enter a number from the user if it is a negative then convert into positive and if it is positive then convert into negative often that print the number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n &lt; 0)
+            n = -n;
+        else if(n > 0)
+            n = -n;
+
+        printf("Result = %d", n);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: -15
+Result = 15</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 7</u> : Enter a number from the user if the number is negative then square the number and if it is positive then increment the number 20 times ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n, i;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n &lt; 0)
+        {
+            n = n * n;
+            printf("Square = %d", n);
+        }
+        else if(n > 0)
+        {
+            for(i = 1; i &lt;= 20; i++)
+                n++;
+
+            printf("Result = %d", n);
+        }
+        else
+            printf("Number is zero");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: -4
+Square = 16</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 8</u> : Enter two number from user and check which is the greater number and print the greater number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int num1, num2;
+
+        clrscr();
+
+        printf("Enter the number: ");
+        scanf("%d", &num1);
+
+        printf("Enter the number: ");
+        scanf("%d", &num2);
+
+        if(num1 > num2)
+            printf("Greater number = %d", num1);
+        else if(num2 > num1)
+            printf("Greater number = %d", num2);
+        else
+            printf("Both numbers are equal");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter two numbers: 10 20
+Greater number = 20</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 9</u> : Enter a number from user and check it is divisible by 4 or not ?
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        if(n % 4 == 0)
+            printf("Divisible by 4");
+        else
+            printf("Not divisible by 4");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 16
+Divisible by 4</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 10</u> : Write a program to calculate area and perimeter of rectangle ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int length, breadth, area, perimeter;
+
+        clrscr();
+
+        printf("Enter length: ");
+        scanf("%d", &length);
+
+        printf("Enter breadth: ");
+        scanf("%d", &breadth);
+
+        area = length * breadth;
+        perimeter = 2 * (length + breadth);
+
+        printf("Area = %d\n", area);
+        printf("Perimeter = %d", perimeter);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter length: 10
+Enter breadth: 5
+Area = 50
+Perimeter = 30</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+
+</html>

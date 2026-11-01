@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Questions</title>
+    <link rel="stylesheet" href="basic_style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">C Programming</a></div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Problems</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-para">
+            <h1 class="hero-heading">Operators</h1>
+            <p class="hero-description">Practice Questions on operators for improving this concept in C language
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="ques-heading">
+            <h1>Questions</h1>
+        </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Write a program to show the example of pre-increment ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a = 5;
+
+        clrscr();
+
+        printf("Value before increment = %d\n", a);
+
+        printf("Value after increment = %d", ++a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Value before increment = 5
+Value after increment = 6</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Write a program to show the example of post-increment ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a = 5;
+
+        clrscr();
+
+        printf("Value before increment = %d\n", a);
+
+        printf("Value during post-increment = %d\n", a++);
+
+        printf("Value after increment = %d", a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Value before increment = 5
+Value during post-increment = 5
+Value after increment = 6</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Write a program to show the example of pre-decrement ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a = 5;
+
+        clrscr();
+
+        printf("Value before decrement = %d\n", a);
+
+        printf("Value after decrement = %d", --a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Value before decrement = 5
+Value after decrement = 4</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 4</u> : Write a program to show that example of post-decrement ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a = 5;
+
+        clrscr();
+
+        printf("Value before decrement = %d\n", a);
+
+        printf("Value during post-decrement = %d\n", a--);
+
+        printf("Value after decrement = %d", a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Value before decrement = 5
+Value during post-decrement = 5
+Value after decrement = 4</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 5</u> : Write a program to enter 2 numbers from user add the number and show the answer , again take 2 number from user subtract the number display the answer ,again take 2 number from user multiply the number display the answer and ,again take 2 number from the user divide the number display the answer ,again take 2 number find the remainder and display the answer ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a, b;
+
+        clrscr();
+
+        printf("Enter two numbers for addition: ");
+        scanf("%d%d", &a, &b);
+        printf("Addition = %d\n", a + b);
+
+        printf("Enter two numbers for subtraction: ");
+        scanf("%d%d", &a, &b);
+        printf("Subtraction = %d\n", a - b);
+
+        printf("Enter two numbers for multiplication: ");
+        scanf("%d%d", &a, &b);
+        printf("Multiplication = %d\n", a * b);
+
+        printf("Enter two numbers for division: ");
+        scanf("%d%d", &a, &b);
+
+        if(b != 0)
+            printf("Division = %d\n", a / b);
+        else
+            printf("Division is not possible\n");
+
+        printf("Enter two numbers for remainder: ");
+        scanf("%d%d", &a, &b);
+
+        if(b != 0)
+            printf("Remainder = %d", a % b);
+        else
+            printf("Remainder is not possible");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter two numbers for addition: 10 5
+Addition = 15
+Enter two numbers for subtraction: 10 5
+Subtraction = 5
+Enter two numbers for multiplication: 10 5
+Multiplication = 50
+Enter two numbers for division: 10 5
+Division = 2
+Enter two numbers for remainder: 10 3
+Remainder = 1</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 6</u> : Write a program to enter a number from the user, the length of the number is depend on the user, programmer should print the last digit of number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        printf("Last digit = %d", n%10);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 12345
+Last digit = 5</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 7</u> : Enter a decimal number from the user (float) and print the right hand side of the decimal point ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        float n, a;
+
+        clrscr();
+
+        printf("Enter a decimal number: ");
+        scanf("%f", &n);
+
+        a = n - (int)n;
+
+        printf("Decimal part = %f", a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a decimal number: 12.75
+Decimal part = 0.750000</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 8</u> : Enter a number from user and find out cube of numbers ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int n, cube;
+
+        clrscr();
+
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        cube = n * n * n;
+
+        printf("Cube = %d", cube);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a number: 3
+Cube = 27</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 9</u> : Enter float number from user and round of the number ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        float n;
+        int a;
+
+        clrscr();
+
+        printf("Enter a decimal number: ");
+        scanf("%f", &n);
+
+        a = n + 0.5;
+
+        printf("Rounded number = %d", a);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a decimal number: 5.7
+Rounded number = 6</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 10</u> : Enter a lower case character from user and print it into upper case ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        char ch;
+
+        clrscr();
+
+            printf("Enter a lowercase character: ");
+        scanf("%c", &ch);
+
+        if(ch&gt;=65 && ch&lt;=91 || ch&gt;=97 && ch&lt;=122)
+            {
+                ch = ch - 32;
+
+            printf("Uppercase character = %c", ch);
+            }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter a lowercase character: a
+Uppercase character = A</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 11</u> : Enter marks of students and calculate average of student’s marks ?
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int a, b, c, d, e;
+        float average;
+
+        clrscr();
+
+        printf("Enter marks of 5 subjects: ");
+        scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
+
+        average = (a + b + c + d + e) / 5.0;
+
+        printf("Average marks = %f", average)
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter marks of 5 subjects: 80 70 90 60 100
+Average marks = 80.000000</pre>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 12</u> : Calculate simple interest = (P x R x T)/ 100
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        float p, r, t, si;
+
+        clrscr();
+
+        printf("Enter principal amount: ");
+        scanf("%f", &p);
+
+        printf("Enter rate of interest: ");
+        scanf("%f", &r);
+
+        printf("Enter time in years: ");
+        scanf("%f", &t);
+
+        si = (p * r * t) / 100;
+
+        printf("Simple Interest = %f", si);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter principal amount: 1000
+Enter rate of interest: 5
+Enter time in years: 2
+Simple Interest = 100.000000</pre>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; Created by Gaurav 4011/26
+        </div>
+    </footer>
+</body>
+
+</html>
