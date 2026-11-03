@@ -23,8 +23,65 @@
     </section>
     <section class="questions">
         <div class="ques-heading">
-            <h1>No Questions Available</h1>
+            <h1>Questions</h1>
         </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> :Create a union Student with roll number, name and fees. Accept and display each member separately.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    union Student
+    {
+        int roll;
+        char name[10];
+        float fees;
+    };
+
+    void main()
+    {
+        union Student s;
+
+        clrscr();
+
+         printf("Enter roll number: ");
+        scanf("%d", &s.roll);
+        printf("Roll Number: %d\n", s.roll);
+
+        printf("\nEnter name: ");
+        scanf("%9s", s.name);
+        printf("Name: %s\n", s.name);
+
+        printf("\nEnter fees: ");
+        scanf("%f", &s.fees);
+        printf("Fees: %.2f\n", s.fees);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>
+Enter roll number: 12
+Roll Number: 12
+
+Enter name: Aman
+Name: Aman
+
+Enter fees: 15000
+Fees: 15000.00</pre>
+            </div>
+        </section>
     </section>
 
     <footer class="footer">
