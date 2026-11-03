@@ -23,8 +23,165 @@
     </section>
     <section class="questions">
         <div class="ques-heading">
-            <h1>No Questions Available</h1>
+            <h1>Questions</h1>
         </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Create a file and copy it into another file
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        FILE *f1, *f2;
+        char ch;
+
+        clrscr();
+
+        f1 = fopen("first.txt", "w");
+        fprintf(f1, "Hello, this is my first file.");
+        fclose(f1);
+
+        f1 = fopen("first.txt", "r");
+        f2 = fopen("copy.txt", "w");
+
+        while ((ch = fgetc(f1)) != -1)
+        {
+             fputc(ch, f2);
+        }
+
+         fclose(f1);
+        fclose(f2);
+
+        printf("File copied successfully.");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>File copied successfully.</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> : Create two files and concatenate them into a third file
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        FILE *f1, *f2, *f3;
+        char ch;
+
+        clrscr();
+
+         f1 = fopen("first.txt", "w");
+        fprintf(f1, "This is the first file.\n");
+        fclose(f1);
+
+        f2 = fopen("second.txt", "w");
+        fprintf(f2, "This is the second file.\n");
+        fclose(f2);
+
+        f1 = fopen("first.txt", "r");
+        f2 = fopen("second.txt", "r");
+        f3 = fopen("third.txt", "w");
+
+        while ((ch = fgetc(f1)) != -1)
+        {
+            fputc(ch, f3);
+        }
+
+        while ((ch = fgetc(f2)) != -1)
+        {
+            fputc(ch, f3);
+        }
+
+        fclose(f1);
+        fclose(f2);
+        fclose(f3);
+
+        printf("Files concatenated successfully.");
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>Files concatenated successfully</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 3</u> : Create a file and count the number of characters
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        FILE *fp;
+        char ch;
+        int count = 0;
+
+        clrscr();
+
+         fp = fopen("data.txt", "w");
+        fprintf(fp, "Hello World");
+        fclose(fp);
+
+        fp = fopen("data.txt", "r");
+
+        while ((ch = fgetc(fp)) != -1)
+        {
+            count++;
+        }
+
+        fclose(fp);
+
+        printf("Number of characters = %d", count);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>
+                    data entered: hello
+                    Number of characters = 5
+                </pre>
+            </div>
+        </section>
     </section>
 
     <footer class="footer">
