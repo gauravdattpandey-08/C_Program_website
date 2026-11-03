@@ -23,8 +23,83 @@
     </section>
     <section class="questions">
         <div class="ques-heading">
-            <h1>No Questions Available</h1>
+            <h1>Questions</h1>
         </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Q1. Write a C program using recursion to display numbers from 1 to 5. Use a global variable i initialized to 1. 
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    int i = 1;
+
+    void display()
+    {
+        if (i <= 5)
+        {
+            i++;
+            display();
+            printf("%d", i);
+        }
+    }
+
+    void main()
+    {
+        display();
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>666666</p>
+            </div>
+        </section>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 2</u> :Q2. Write a C program using a recursive function with an integer parameter to display numbers from 1 to 5. 
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void display(int i)
+    {
+        if (i <= 5)
+        {
+            i++;
+            display(i);
+            printf("%d", i);
+        }
+    }
+
+    void main()
+    {
+        display(1);
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <p>65432</p>
+            </div>
+        </section>
     </section>
 
     <footer class="footer">
