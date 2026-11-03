@@ -23,8 +23,74 @@
     </section>
     <section class="questions">
         <div class="ques-heading">
-            <h1>No Questions Available</h1>
+            <h1>Questions</h1>
         </div>
+        <section class="ques2026">
+            <div class="ques">
+                <p>
+                    <u>Question 1</u> : Q. Write a C program using a pointer with an array. A pointer should point to the array. Through the pointer, we will fill all the locations of the array by asking the values from the user and print the array.
+                </p>
+            </div>
+            <div class="sol">
+                <p>Solution:</p>
+            </div>
+            <div class="ans">
+                <pre>
+    #include &lt;stdio.h&gt;
+    #include &lt;conio.h&gt;
+    #include &lt;dos.h&gt;
+    void main()
+    {
+        int x[10];
+        int i, *ptr;
+
+         clrscr();
+
+        for(i = 0; i < 10; i++)
+        {
+            ptr = &x[i];
+
+            printf("Enter number %d here: ", i + 1);
+            scanf("%d", ptr);
+        }
+
+        for(i = 0; i < 10; i++)
+        {
+            ptr = &x[i];
+
+            printf("The value at index %d is %d\n", i, *ptr);
+        }
+        delay(3000);
+    }
+                    </pre>
+            </div>
+            <div class="sol">
+                <p>Output:</p>
+            </div>
+            <div class="output">
+                <pre>Enter number 1 here: 10
+                    Enter number 2 here: 20
+                    Enter number 3 here: 30
+                    Enter number 4 here: 40
+                    Enter number 5 here: 50
+                    Enter number 6 here: 60
+                    Enter number 7 here: 70
+                    Enter number 8 here: 80
+                    Enter number 9 here: 90
+                    Enter number 10 here: 100
+
+                    The value at index 0 is 10
+                    The value at index 1 is 20
+                    The value at index 2 is 30
+                    The value at index 3 is 40
+                    The value at index 4 is 50
+                    The value at index 5 is 60
+                    The value at index 6 is 70
+                    The value at index 7 is 80
+                    The value at index 8 is 90
+                    The value at index 9 is 100</pre>
+            </div>
+        </section>
     </section>
 
     <footer class="footer">
